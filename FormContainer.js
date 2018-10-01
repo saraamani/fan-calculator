@@ -515,15 +515,6 @@ class FormContainer extends Component {
     return fanOptions;
   }
 
-  // fillFanOptions() {
-  //   for (var i = 0; i < resultValues.data.length; i++) {
-  //     this.fanOptions.push(<Option key={resultValues.data[i]['name']}>
-  //       {resultValues.data[i]['name']} ({resultValues.data[i]['efficiency']} - {resultValues.data[i]['effect']} - {resultValues.data[i]['rpm']} - {resultValues.data[i]['soundEffectLevel']})
-  //       </Option>);
-  //   }
-  //   this.setValues(0);
-  // }
-
   setValues(index) {
     var resultValues = this.state.resultValues
     this.setFanSheetLink(resultValues.data[index]['name'].substring(0, 3));
